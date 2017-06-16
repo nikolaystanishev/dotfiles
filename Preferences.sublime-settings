@@ -1,11 +1,14 @@
 {
 	"Themr": "mouse_wheel_tabswitch",
 	"color_scheme": "Packages/Colorsublime - Themes/Another_Kolor_Dark.tmTheme",
-	"font_size": 18,
+	"font_size": 17,
 	"ignored_packages":
 	[
-        "Vintage"
+		"C++ Completions",
+		"Jedi - Python autocompletion",
+		"Vintage"
 	],
-	"theme": "Seti.sublime-theme",
+	"theme": "Material-Theme-Darker.sublime-theme",
 	"translate_tabs_to_spaces": true
 }
+
