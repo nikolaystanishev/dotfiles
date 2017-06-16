@@ -121,8 +121,17 @@ alias dsize='du -hs'
 # Mount alias
 alias  drive='sudo ntfsfix'
 
+# Go to venv for BrickText
+alias brick='source /home/nikolay/Workspace/venv/BrickText/bin/activate; export PYTHONPATH=/home/nikolay/Workspace/venv/BrickText/bin/python3:/home/nikolay/Workspace/BrickText'
+
 # Network restart
 alias net='sudo systemctl restart network-manager.service'
+
+# Open directory from terminal
+alias odir='nautilus'
+
+# Colorfull cat
+alias ccat='pygmentize -g -O style=colorful,linenos=1'
 
 
 # Add function for extract
@@ -156,3 +165,12 @@ function extract {
     fi
 fi
 }
+
+# Android sdk exports
+export ANDROID_HOME=${HOME}/Android/Sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+
+# added by Miniconda3 4.3.21 installer
+export PATH="/home/nikolay/miniconda3/bin:$PATH"
+
