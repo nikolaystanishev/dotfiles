@@ -1,0 +1,21 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"Anaconda",
+		"AutoPEP8",
+		"Colorsublime",
+		"GhostText",
+		"Goto Usage",
+		"Highlight",
+		"Jedi - Python autocompletion",
+		"Material Theme",
+		"MoveTab",
+		"Package Control",
+		"Pretty JSON"
+	]
+}
