@@ -103,11 +103,8 @@ alias gc='git commit'
 alias gp='git pull'
 alias up='git push origin master'
 
-# Add arduino alias
-alias arduino='/opt/arduino-1.6.12/arduino'
-
 # Add pip alias
-alias pip='pip3'
+#alias pip='pip3'
 
 # enconv alias
 alias encv='enconv -L bulgarian -x utf8'
@@ -133,6 +130,22 @@ alias odir='nautilus'
 # Colorfull cat
 alias ccat='pygmentize -g -O style=colorful,linenos=1'
 
+# Run python with Nvidia
+alias nvidiapy='optirun python3'
+
+# Nvidia info
+alias nvidia-info='watch optirun nvidia-smi'
+
+# Swap alias
+alias swap='sudo swapoff -a && sudo swapon /dev/sda9'
+
+# Graduation project
+alias remove_4ovek='cd Workspace/elsys/graduation_project/remove_4ovek && subl'
+alias train='optirun python3 train.py; swap'
+alias predict='optirun python3 predict.py'
+
+# Remount alias
+alias remount='sudo mount -o remount,rw'
 
 # Add function for extract
 function extract {
@@ -166,11 +179,9 @@ function extract {
 fi
 }
 
-# Android sdk exports
-export ANDROID_HOME=${HOME}/Android/Sdk
-export PATH=${PATH}:${ANDROID_HOME}/tools
-export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+# added by Anaconda3 installer
+export PATH="/home/nikolay/anaconda3/bin:$PATH"
 
-# added by Miniconda3 4.3.21 installer
-export PATH="/home/nikolay/miniconda3/bin:$PATH"
+# Google Cloud Platform
+export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)"
 
