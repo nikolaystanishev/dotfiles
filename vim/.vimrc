@@ -105,7 +105,7 @@ Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 
 " Theme
-colorscheme molokai
+colorscheme 1989
 
 " Airline
 set laststatus=2
